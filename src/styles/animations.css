@@ -1,0 +1,369 @@
+/* Global Animations */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide In From Left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide In From Right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide In From Top */
+@keyframes slideInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide In From Bottom */
+@keyframes slideInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scale In */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Bounce In */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Float Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Glow Animation */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(255, 77, 36, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 77, 36, 0.6);
+  }
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Rotate In */
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-10deg) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+}
+
+/* Flip In */
+@keyframes flipIn {
+  from {
+    opacity: 0;
+    transform: perspective(400px) rotateY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(400px) rotateY(0);
+  }
+}
+
+/* Stagger Animation Helper */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+.stagger-6 { animation-delay: 0.6s; }
+
+/* Page Elements Animations */
+
+/* Headers */
+header {
+  animation: slideInTop 0.6s ease-out;
+}
+
+/* Hero Sections */
+.hero-slide,
+.about-hero,
+.blog-hero,
+.blog-detail-hero {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.hero-slide-content,
+.about-hero-content,
+.blog-hero-content,
+.blog-detail-hero-content {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.hero-slide-image,
+.about-hero-image,
+.blog-hero-image,
+.blog-detail-hero-image {
+  animation: slideInRight 0.8s ease-out;
+}
+
+/* Section Titles */
+.mission-vision-title,
+.company-story-title,
+.team-title,
+.achievements-title,
+.why-choose-us-about-title,
+.blog-detail-related-title {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.mission-vision-subtitle,
+.company-story-subtitle {
+  animation: slideInLeft 0.6s ease-out 0.1s both;
+}
+
+/* Cards and Grid Items */
+.feature-card,
+.achievement-card,
+.why-choose-us-about-card,
+.blog-post-card,
+.blog-detail-related-post,
+.card,
+.option {
+  animation: scaleIn 0.5s ease-out;
+}
+
+.feature-card:nth-child(1) { animation-delay: 0.1s; }
+.feature-card:nth-child(2) { animation-delay: 0.2s; }
+.feature-card:nth-child(3) { animation-delay: 0.3s; }
+
+.achievement-card:nth-child(1) { animation-delay: 0.1s; }
+.achievement-card:nth-child(2) { animation-delay: 0.15s; }
+.achievement-card:nth-child(3) { animation-delay: 0.2s; }
+.achievement-card:nth-child(4) { animation-delay: 0.25s; }
+.achievement-card:nth-child(5) { animation-delay: 0.3s; }
+.achievement-card:nth-child(6) { animation-delay: 0.35s; }
+
+.why-choose-us-about-card:nth-child(1) { animation-delay: 0.1s; }
+.why-choose-us-about-card:nth-child(2) { animation-delay: 0.15s; }
+.why-choose-us-about-card:nth-child(3) { animation-delay: 0.2s; }
+.why-choose-us-about-card:nth-child(4) { animation-delay: 0.25s; }
+.why-choose-us-about-card:nth-child(5) { animation-delay: 0.3s; }
+.why-choose-us-about-card:nth-child(6) { animation-delay: 0.35s; }
+
+.blog-post-card:nth-child(1) { animation-delay: 0.1s; }
+.blog-post-card:nth-child(2) { animation-delay: 0.2s; }
+.blog-post-card:nth-child(3) { animation-delay: 0.3s; }
+.blog-post-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Buttons */
+.cta-button,
+.blog-post-card-link,
+.blog-detail-back {
+  animation: slideInBottom 0.6s ease-out 0.3s both;
+}
+
+/* Sidebar and Mobile Menu */
+.sidebar-menu {
+  animation: slideInLeft 0.4s ease-out;
+}
+
+.mobile-menu {
+  animation: slideInLeft 0.4s ease-out;
+}
+
+/* Team Cards */
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Blog Detail Content */
+.blog-detail-content {
+  animation: slideInLeft 0.6s ease-out 0.2s both;
+}
+
+.blog-detail-sidebar {
+  animation: slideInRight 0.6s ease-out 0.2s both;
+}
+
+.blog-detail-sidebar-widget:nth-child(1) { animation-delay: 0.3s; }
+.blog-detail-sidebar-widget:nth-child(2) { animation-delay: 0.4s; }
+.blog-detail-sidebar-widget:nth-child(3) { animation-delay: 0.5s; }
+
+/* Footer */
+footer {
+  animation: slideInBottom 0.6s ease-out;
+}
+
+.footer-left {
+  animation: slideInLeft 0.6s ease-out 0.1s both;
+}
+
+.footer-column:nth-child(1) { animation-delay: 0.2s; }
+.footer-column:nth-child(2) { animation-delay: 0.3s; }
+.footer-column:nth-child(3) { animation-delay: 0.4s; }
+.footer-column:nth-child(4) { animation-delay: 0.5s; }
+
+/* Hover Animations */
+.feature-card,
+.achievement-card,
+.why-choose-us-about-card,
+.blog-post-card,
+.card {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.feature-card:hover,
+.achievement-card:hover,
+.why-choose-us-about-card:hover,
+.blog-post-card:hover,
+.card:hover {
+  animation: float 2s ease-in-out infinite;
+}
+
+/* Text Animation */
+h1, h2, h3, h4, h5, h6 {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+p {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Image Animation */
+img {
+  animation: scaleIn 0.6s ease-out;
+}
+
+/* Link Animation */
+a {
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  animation: pulse 0.6s ease-in-out;
+}
+
+/* Input Animation */
+input, textarea, select {
+  animation: slideInBottom 0.5s ease-out;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  animation: glow 0.6s ease-in-out infinite;
+}
+
+/* Smooth Page Transitions */
+body {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Scroll Animation Trigger */
+.scroll-animate {
+  opacity: 0;
+  animation: slideInBottom 0.6s ease-out forwards;
+}
+
+/* Responsive Animations */
+@media (max-width: 768px) {
+  .feature-card,
+  .achievement-card,
+  .why-choose-us-about-card,
+  .blog-post-card,
+  .card {
+    animation: scaleIn 0.4s ease-out;
+  }
+
+  header {
+    animation: slideInTop 0.4s ease-out;
+  }
+
+  .hero-slide-content,
+  .about-hero-content {
+    animation: slideInLeft 0.5s ease-out;
+  }
+}

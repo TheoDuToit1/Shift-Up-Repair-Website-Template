@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shift Up - Car Repair</title>
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+      <div class="custom-cursor-box">
+        <div class="custom-cursor-dot"></div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-logo">
+        <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+          <image href="/97fa7f9d-dd2c-4661-b432-887fc495fb3f.svg" width="120" height="40"/>
+        </svg>
+      </div>
+
+      <nav class="header-nav">
+        <a href="index.html" class="header-nav-item active">HOMES</a>
+        <a href="shop.html" class="header-nav-item">SHOP</a>
+        <a href="who-we-are.html" class="header-nav-item">WHO WE ARE</a>
+        <a href="faq.html" class="header-nav-item">FAQ</a>
+        <a href="services.html" class="header-nav-item">SERVICES</a>
+      </nav>
+
+      <div class="header-right">
+        <div class="header-cart">
+          CART
+          <span class="header-cart-counter">0</span>
+        </div>
+
+        <div class="header-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu (only visible on mobile) -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+      <button class="mobile-menu-close">×</button>
+      <nav class="mobile-menu-nav">
+        <a href="index.html" class="mobile-menu-item">HOME</a>
+        <a href="shop.html" class="mobile-menu-item">SHOP</a>
+        <a href="who-we-are.html" class="mobile-menu-item">WHO WE ARE</a>
+        <a href="faq.html" class="mobile-menu-item">FAQ</a>
+        <a href="services.html" class="mobile-menu-item">SERVICES</a>
+        <a href="contact.html" class="mobile-menu-item">CONTACT</a>
+      </nav>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar-menu">
+      <button class="sidebar-close">×</button>
+      
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">CONTACT INFO</h3>
+        <div class="sidebar-section-content">
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Phone</span>
+            <span class="sidebar-item-value">+1 (555) 123-4567</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Email</span>
+            <span class="sidebar-item-value">support@shiftup.com</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Support Hours</span>
+            <span class="sidebar-item-value">24/7 Available</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">ADDRESS</h3>
+        <div class="sidebar-section-content">
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Main Office</span>
+            <span class="sidebar-item-value">123 Auto Street<br>Car City, CC 12345<br>United States</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Service Center</span>
+            <span class="sidebar-item-value">456 Repair Avenue<br>Motor Town, MT 67890<br>United States</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">BUSINESS HOURS</h3>
+        <div class="sidebar-section-content">
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Monday - Friday</span>
+            <span class="sidebar-item-value">8:00 AM - 6:00 PM</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Saturday</span>
+            <span class="sidebar-item-value">9:00 AM - 4:00 PM</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Sunday</span>
+            <span class="sidebar-item-value">Closed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">NAVIGATION</h3>
+        <nav class="sidebar-nav">
+          <a href="index.html" class="sidebar-nav-item">HOME</a>
+          <a href="shop.html" class="sidebar-nav-item">SHOP</a>
+          <a href="who-we-are.html" class="sidebar-nav-item">WHO WE ARE</a>
+          <a href="faq.html" class="sidebar-nav-item">FAQ</a>
+          <a href="services.html" class="sidebar-nav-item">SERVICES</a>
+          <a href="contact.html" class="sidebar-nav-item">CONTACT</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-static">
+        <div class="hero-content">
+          <div class="hero-text">
+            <a href="shop.html" class="hero-button">View More</a>
+          </div>
+        </div>
+        <img src="/h1-rev-img.png" alt="Hero" class="hero-image">
+      </div>
+    </section>
+
+    <!-- Technical Specifications Section -->
+    <section class="specs">
+      <div class="specs-container">
+        <!-- Left Column -->
+        <div class="specs-left">
+          <h2 class="specs-heading">OUR SERVICES</h2>
+          <div class="specs-items">
+            <button class="specs-item active" data-spec="range">Maintenance</button>
+            <button class="specs-item" data-spec="acceleration">Repairs</button>
+            <button class="specs-item" data-spec="power">Diagnostics</button>
+            <button class="specs-item" data-spec="charging">Customization</button>
+            <button class="specs-item" data-spec="interior">Detailing</button>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="specs-right">
+          <div class="specs-content" data-spec="range">
+            <h3 class="specs-title">PROFESSIONAL MAINTENANCE</h3>
+            <p class="specs-description">
+              Keep your vehicle running smoothly with our comprehensive maintenance services. Our certified technicians use genuine parts and advanced equipment to ensure your car stays in peak condition.
+            </p>
+            <strong>Maintenance Services</strong>
+            <ul class="specs-description">
+              <li>Oil changes and fluid replacements</li>
+              <li>Filter replacements and inspections</li>
+              <li>Brake and suspension checks</li>
+            </ul>
+            <button class="specs-button" onclick="window.location.href='services.html'">Schedule Service</button>
+          </div>
+
+          <div class="specs-content hidden" data-spec="acceleration">
+            <h3 class="specs-title">EXPERT REPAIRS</h3>
+            <p class="specs-description">
+              From minor fixes to major overhauls, our experienced technicians handle all types of car repairs with precision and care. We use state-of-the-art diagnostic tools to identify and fix issues quickly.
+            </p>
+            <strong>Repair Services</strong>
+            <ul class="specs-description">
+              <li>Engine and transmission repairs</li>
+              <li>Electrical system diagnostics</li>
+              <li>Suspension and steering repairs</li>
+            </ul>
+            <button class="specs-button" onclick="window.location.href='services.html'">Get Repair Quote</button>
+          </div>
+
+          <div class="specs-content hidden" data-spec="power">
+            <h3 class="specs-title">ADVANCED DIAGNOSTICS</h3>
+            <p class="specs-description">
+              Identify problems before they become expensive. Our advanced diagnostic equipment pinpoints issues accurately, saving you time and money on unnecessary repairs.
+            </p>
+            <strong>Diagnostic Services</strong>
+            <ul class="specs-description">
+              <li>Computer diagnostics and scanning</li>
+              <li>Performance testing and analysis</li>
+              <li>Emission testing and certification</li>
+            </ul>
+            <button class="specs-button" onclick="window.location.href='services.html'">Book Diagnostic</button>
+          </div>
+
+          <div class="specs-content hidden" data-spec="charging">
+            <h3 class="specs-title">CUSTOM MODIFICATIONS</h3>
+            <p class="specs-description">
+              Make your vehicle uniquely yours with our customization services. From performance upgrades to aesthetic enhancements, we bring your vision to life.
+            </p>
+            <strong>Customization Options</strong>
+            <ul class="specs-description">
+              <li>Performance upgrades and tuning</li>
+              <li>Suspension and exhaust modifications</li>
+              <li>Interior and exterior customization</li>
+            </ul>
+            <button class="specs-button" onclick="window.location.href='services.html'">Explore Options</button>
+          </div>
+
+          <div class="specs-content hidden" data-spec="interior">
+            <h3 class="specs-title">PROFESSIONAL DETAILING</h3>
+            <p class="specs-description">
+              Keep your car looking showroom fresh with our professional detailing services. We use premium products and techniques to protect and enhance your vehicle's appearance.
+            </p>
+            <strong>Detailing Services</strong>
+            <ul class="specs-description">
+              <li>Interior and exterior cleaning</li>
+              <li>Paint protection and ceramic coating</li>
+              <li>Upholstery and leather care</li>
+            </ul>
+            <button class="specs-button" onclick="window.location.href='services.html'">Book Detailing</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Statistics Section -->
+    <section class="stats">
+      <div class="stats-container">
+        <!-- Left Column - Statistics -->
+        <div class="stats-left">
+          <div class="stats-row">
+            <div class="stats-card">
+              <div class="stats-card-header">
+                <h3 class="stats-label">Established</h3>
+                <p class="stats-value">2015</p>
+              </div>
+              <div class="stats-bar">
+                <div class="stats-bar-fill" style="width: 100%;"></div>
+              </div>
+            </div>
+
+            <div class="stats-card">
+              <div class="stats-card-header">
+                <h3 class="stats-label">Cars Serviced</h3>
+                <p class="stats-value">15,000+</p>
+              </div>
+              <div class="stats-bar">
+                <div class="stats-bar-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats-row">
+            <div class="stats-card">
+              <div class="stats-card-header">
+                <h3 class="stats-label">Repairs Completed</h3>
+                <p class="stats-value">50,000+</p>
+              </div>
+              <div class="stats-bar">
+                <div class="stats-bar-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <div class="stats-card">
+              <div class="stats-card-header">
+                <h3 class="stats-label">Service Bays</h3>
+                <p class="stats-value">12</p>
+              </div>
+              <div class="stats-bar">
+                <div class="stats-bar-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats-bar-full">
+            <div class="stats-bar-full-header">
+              <h3 class="stats-label">Industry Awards</h3>
+              <p class="stats-value">28</p>
+            </div>
+            <div class="stats-bar">
+              <div class="stats-bar-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - Image -->
+        <div class="stats-right">
+          <img src="/h1-rev-img2.jpg.jpeg" alt="Stats" class="stats-image">
+        </div>
+      </div>
+    </section>
+
+    <!-- Happy Customers Section -->
+    <section class="customers">
+      <div class="customers-container">
+        <!-- Left Column - Image -->
+        <div class="customers-left">
+          <img src="/h1-rev-img2.jpg.jpeg" alt="Customers" class="customers-image">
+        </div>
+
+        <!-- Right Column - Customer Count -->
+        <div class="customers-right">
+          <h2 class="customers-heading">OUR SATISFIED CUSTOMERS</h2>
+          <div class="customers-content">
+            <p class="customers-count">50,000+</p>
+            <p class="customers-label">Happy Customers Worldwide</p>
+            <p class="customers-description">
+              Our commitment to excellence and customer satisfaction has made us the trusted choice for thousands of vehicle enthusiasts. Join our growing community of satisfied customers today.
+            </p>
+            <button class="customers-button" onclick="window.location.href='contact.html'">Join Our Community</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video">
+      <div class="video-container">
+        <div class="video-background">
+          <img src="/h1-rev-img3.jpg" alt="Video Background" class="video-bg-image">
+        </div>
+        <button class="video-play-button">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="video-play-icon">
+            <polygon points="5 3 19 12 5 21" fill="currentColor"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog">
+      <div class="blog-container">
+        <h2 class="blog-heading">
+          <span class="blog-letter">B</span>
+          <span class="blog-letter">L</span>
+          <span class="blog-letter">O</span>
+          <span class="blog-letter">G</span>
+          <span class="blog-letter">S</span>
+        </h2>
+
+        <div class="blog-posts">
+          <a href="blog.html" class="blog-post">
+            <div class="blog-post-date">
+              <span class="blog-month">OCT</span>
+              <span class="blog-day">05</span>
+            </div>
+            <div class="blog-post-meta">
+              <span class="blog-category">CAR</span>
+              <span class="blog-separator">|</span>
+              <span class="blog-tag">ELECTRONIC</span>
+            </div>
+            <h3 class="blog-post-title">Eyes On The Road</h3>
+            <div class="blog-post-image">
+              <img src="/h1-img3.jpg.jpeg" alt="Eyes On The Road">
+            </div>
+          </a>
+
+          <a href="blog.html" class="blog-post">
+            <div class="blog-post-date">
+              <span class="blog-month">OCT</span>
+              <span class="blog-day">25</span>
+            </div>
+            <div class="blog-post-meta">
+              <span class="blog-category">CAR</span>
+              <span class="blog-separator">|</span>
+              <span class="blog-tag">ELECTRONIC</span>
+            </div>
+            <h3 class="blog-post-title">Fast & Furious</h3>
+            <div class="blog-post-image">
+              <img src="/h1-img3.jpg.jpeg" alt="Fast & Furious">
+            </div>
+          </a>
+
+          <a href="blog.html" class="blog-post">
+            <div class="blog-post-date">
+              <span class="blog-month">OCT</span>
+              <span class="blog-day">30</span>
+            </div>
+            <div class="blog-post-meta">
+              <span class="blog-category">CAR</span>
+              <span class="blog-separator">|</span>
+              <span class="blog-tag">ELECTRONIC</span>
+            </div>
+            <h3 class="blog-post-title">Modern Car Industry</h3>
+            <div class="blog-post-image">
+              <img src="/h1-img3.jpg.jpeg" alt="Modern Car Industry">
+            </div>
+          </a>
+
+          <a href="blog.html" class="blog-post">
+            <div class="blog-post-date">
+              <span class="blog-month">NOV</span>
+              <span class="blog-day">01</span>
+            </div>
+            <div class="blog-post-meta">
+              <span class="blog-category">CAR</span>
+              <span class="blog-separator">|</span>
+              <span class="blog-tag">ELECTRONIC</span>
+            </div>
+            <h3 class="blog-post-title">Automobile Catalog</h3>
+            <div class="blog-post-image">
+              <img src="/h1-img3.jpg.jpeg" alt="Automobile Catalog">
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Carousel Section -->
+    <section class="brands">
+      <div class="brands-carousel">
+        <div class="brands-track">
+          <div class="brand-item">BMW</div>
+          <div class="brand-item">FORD</div>
+          <div class="brand-item">MERCEDES</div>
+          <div class="brand-item">PORSCHE</div>
+          <div class="brand-item">FERRARI</div>
+          <div class="brand-item">AUDI</div>
+          <div class="brand-item">LAMBORGHINI</div>
+          <div class="brand-item">TESLA</div>
+          <!-- Duplicate for seamless loop -->
+          <div class="brand-item">BMW</div>
+          <div class="brand-item">FORD</div>
+          <div class="brand-item">MERCEDES</div>
+          <div class="brand-item">PORSCHE</div>
+          <div class="brand-item">FERRARI</div>
+          <div class="brand-item">AUDI</div>
+          <div class="brand-item">LAMBORGHINI</div>
+          <div class="brand-item">TESLA</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta">
+      <div class="cta-container">
+        <div class="cta-content">
+          <h2 class="cta-heading">SUPPORT@SHIFTUP.COM</h2>
+          <p class="cta-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolor et.</p>
+        </div>
+        <button class="cta-button" onclick="window.location.href='shop.html'">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="cta-arrow">
+            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- Orange Border Separator -->
+    <div class="footer-separator"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Column -->
+        <div class="footer-left">
+          <h3 class="footer-brand">SHIFT UP</h3>
+          <p class="footer-description">Hit the road with the astounding ShiftUp Theme, made especially for repair shops, car rental and showcasing services.</p>
+          
+          <div class="footer-support">
+            <p class="footer-support-label">Support 24/7</p>
+            <p class="footer-phone">+ 3 123 456-7890</p>
+          </div>
+
+          <div class="footer-address">
+            <p class="footer-address-label">Our address</p>
+            <p class="footer-address-text">96 RDA MALAKA,<br>WEST JAKARTA CITY</p>
+          </div>
+        </div>
+
+        <!-- Right Columns -->
+        <div class="footer-right">
+          <!-- Navigation Column -->
+          <div class="footer-column">
+            <h4 class="footer-column-title">NAVIGATION</h4>
+            <ul class="footer-links">
+              <li><a href="index.html" class="footer-link">HOME</a></li>
+              <li><a href="shop.html" class="footer-link">SHOP</a></li>
+              <li><a href="who-we-are.html" class="footer-link">WHO WE ARE</a></li>
+              <li><a href="services.html" class="footer-link">SERVICES</a></li>
+            </ul>
+          </div>
+
+          <!-- Services Column -->
+          <div class="footer-column">
+            <h4 class="footer-column-title">SERVICES</h4>
+            <ul class="footer-links">
+              <li><a href="faq.html" class="footer-link">FAQ</a></li>
+              <li><a href="services.html" class="footer-link">MAINTENANCE</a></li>
+              <li><a href="services.html" class="footer-link">REPAIRS</a></li>
+              <li><a href="services.html" class="footer-link">DIAGNOSTICS</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Column -->
+          <div class="footer-column">
+            <h4 class="footer-column-title">CONTACT</h4>
+            <ul class="footer-links">
+              <li><a href="contact.html" class="footer-link">CONTACT US</a></li>
+              <li><a href="shop.html" class="footer-link">SHOP</a></li>
+              <li><a href="index.html" class="footer-link">SUPPORT</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal Column -->
+          <div class="footer-column">
+            <h4 class="footer-column-title">LEGAL</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">PRIVACY POLICY</a></li>
+              <li><a href="#" class="footer-link">TERMS OF SERVICE</a></li>
+              <li><a href="#" class="footer-link">COOKIE POLICY</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

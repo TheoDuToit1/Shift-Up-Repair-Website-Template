@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product - Shift Up</title>
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+      <div class="custom-cursor-box">
+        <div class="custom-cursor-dot"></div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header-alt">
+      <div class="header-logo">
+        <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+          <image href="/97fa7f9d-dd2c-4661-b432-887fc495fb3f.svg" width="120" height="40"/>
+        </svg>
+      </div>
+
+      <div class="header-search">
+        <input type="text" placeholder="Type your search here...">
+        <div class="header-search-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="M21 21l-4.35-4.35"/>
+          </svg>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <a href="index.html" class="header-nav-item">HOMES</a>
+        <a href="shop.html" class="header-nav-item">SHOP</a>
+        <a href="who-we-are.html" class="header-nav-item">WHO WE ARE</a>
+        <a href="faq.html" class="header-nav-item">FAQ</a>
+        <a href="services.html" class="header-nav-item">SERVICES</a>
+      </nav>
+
+      <div class="header-support-info">
+        <div>
+          <p class="header-support-label">Support center 24/7</p>
+          <p class="header-support-phone">+ 3 759 315 - 6427</p>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <div class="header-cart">
+          CART
+          <span class="header-cart-counter">0</span>
+        </div>
+
+        <div class="header-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu (only visible on mobile) -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+      <button class="mobile-menu-close">×</button>
+      <div class="mobile-menu-search">
+        <input type="text" placeholder="Search products..." class="mobile-menu-search-input">
+        <button class="mobile-menu-search-btn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="M21 21l-4.35-4.35"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="index.html" class="mobile-menu-item">HOME</a>
+        <a href="shop.html" class="mobile-menu-item">SHOP</a>
+        <a href="who-we-are.html" class="mobile-menu-item">WHO WE ARE</a>
+        <a href="faq.html" class="mobile-menu-item">FAQ</a>
+        <a href="services.html" class="mobile-menu-item">SERVICES</a>
+        <a href="contact.html" class="mobile-menu-item">CONTACT</a>
+      </nav>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar-menu">
+      <button class="sidebar-close">×</button>
+      
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">CONTACT INFO</h3>
+        <div class="sidebar-section-content">
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Phone</span>
+            <span class="sidebar-item-value">+1 (555) 123-4567</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Email</span>
+            <span class="sidebar-item-value">support@shiftup.com</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Support Hours</span>
+            <span class="sidebar-item-value">24/7 Available</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">ADDRESS</h3>
+        <div class="sidebar-section-content">
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Main Office</span>
+            <span class="sidebar-item-value">123 Auto Street<br>Car City, CC 12345<br>United States</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Service Center</span>
+            <span class="sidebar-item-value">456 Repair Avenue<br>Motor Town, MT 67890<br>United States</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">BUSINESS HOURS</h3>
+        <div class="sidebar-section-content">
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Monday - Friday</span>
+            <span class="sidebar-item-value">8:00 AM - 6:00 PM</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Saturday</span>
+            <span class="sidebar-item-value">9:00 AM - 4:00 PM</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Sunday</span>
+            <span class="sidebar-item-value">Closed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">NAVIGATION</h3>
+        <nav class="sidebar-nav">
+          <a href="index.html" class="sidebar-nav-item">HOME</a>
+          <a href="shop.html" class="sidebar-nav-item">SHOP</a>
+          <a href="who-we-are.html" class="sidebar-nav-item">WHO WE ARE</a>
+          <a href="faq.html" class="sidebar-nav-item">FAQ</a>
+          <a href="services.html" class="sidebar-nav-item">SERVICES</a>
+          <a href="contact.html" class="sidebar-nav-item">CONTACT</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Product View Section -->
+    <section class="product-view-section">
+      <div class="product-view-container">
+        <div class="product-view-left">
+          <div class="product-view-image">
+            <img src="/shop-single-new-7-600x713-removebg-preview.png" alt="Product">
+          </div>
+        </div>
+
+        <div class="product-view-right">
+          <h1 class="product-view-title">PREMIUM AUTOMOTIVE WHEEL</h1>
+          
+          <div class="product-view-rating">
+            <span class="product-view-stars">★★★★★</span>
+            <span class="product-view-reviews">(24 reviews)</span>
+          </div>
+
+          <div class="product-view-category">
+            <span class="product-view-category-label">Category:</span>
+            <span class="product-view-category-value">Wheels & Tires</span>
+          </div>
+
+          <div class="product-view-price">
+            <span class="product-view-price-original">$990.00</span>
+            <span class="product-view-price-current">$749.00</span>
+          </div>
+
+          <div class="product-view-stock">
+            <span class="product-view-stock-label">Stock Status:</span>
+            <span class="product-view-stock-value in-stock">In Stock (12 available)</span>
+          </div>
+
+          <div class="product-view-actions">
+            <div class="product-view-quantity">
+              <button class="product-view-qty-btn">-</button>
+              <input type="number" value="1" min="1" class="product-view-qty-input">
+              <button class="product-view-qty-btn">+</button>
+            </div>
+            <button class="product-view-add-btn">ADD TO CART</button>
+          </div>
+
+          <div class="product-view-share">
+            <span>Share:</span>
+            <a href="#" class="product-view-share-link">Facebook</a>
+            <a href="#" class="product-view-share-link">Twitter</a>
+            <a href="#" class="product-view-share-link">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Details Tabs -->
+    <section class="product-details-section">
+      <div class="product-details-container">
+        <div class="product-tabs">
+          <button class="product-tab-btn active" data-tab="description">Description</button>
+          <button class="product-tab-btn" data-tab="specifications">Specifications</button>
+          <button class="product-tab-btn" data-tab="compatibility">Compatibility</button>
+          <button class="product-tab-btn" data-tab="reviews">Reviews</button>
+        </div>
+
+        <div class="product-tab-content">
+          <div class="product-tab-pane active" id="description">
+            <h3>Product Description</h3>
+            <p>High-quality automotive wheel designed for performance and style. Features premium materials and precision engineering for optimal handling and durability. Perfect for car enthusiasts looking to upgrade their vehicle's appearance and performance.</p>
+            <p>This premium wheel is manufactured using advanced techniques to ensure maximum strength and minimal weight. The matte black finish provides a sleek, modern look that complements any vehicle style.</p>
+            <ul>
+              <li>Premium aluminum alloy construction</li>
+              <li>Lightweight design for improved fuel efficiency</li>
+              <li>Enhanced braking performance</li>
+              <li>Corrosion-resistant coating</li>
+              <li>Professional installation recommended</li>
+            </ul>
+          </div>
+
+          <div class="product-tab-pane" id="specifications">
+            <h3>Technical Specifications</h3>
+            <table class="product-specs-table">
+              <tr>
+                <td>Size</td>
+                <td>18 inches</td>
+              </tr>
+              <tr>
+                <td>Material</td>
+                <td>Aluminum Alloy</td>
+              </tr>
+              <tr>
+                <td>Finish</td>
+                <td>Matte Black</td>
+              </tr>
+              <tr>
+                <td>Weight</td>
+                <td>22 lbs per wheel</td>
+              </tr>
+              <tr>
+                <td>Bolt Pattern</td>
+                <td>5x120mm</td>
+              </tr>
+              <tr>
+                <td>Center Bore</td>
+                <td>72.6mm</td>
+              </tr>
+              <tr>
+                <td>Offset</td>
+                <td>+35mm</td>
+              </tr>
+              <tr>
+                <td>Load Rating</td>
+                <td>1200 lbs</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="product-tab-pane" id="compatibility">
+            <h3>Vehicle Compatibility</h3>
+            <p>This wheel is compatible with the following vehicle types:</p>
+            <div class="compatibility-list">
+              <div class="compatibility-item">
+                <span class="compatibility-icon">✓</span>
+                <span>BMW 3 Series (2012-2023)</span>
+              </div>
+              <div class="compatibility-item">
+                <span class="compatibility-icon">✓</span>
+                <span>BMW 5 Series (2010-2023)</span>
+              </div>
+              <div class="compatibility-item">
+                <span class="compatibility-icon">✓</span>
+                <span>Audi A4 (2009-2023)</span>
+              </div>
+              <div class="compatibility-item">
+                <span class="compatibility-icon">✓</span>
+                <span>Mercedes-Benz C-Class (2014-2023)</span>
+              </div>
+              <div class="compatibility-item">
+                <span class="compatibility-icon">✓</span>
+                <span>Volkswagen Jetta (2011-2023)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-tab-pane" id="reviews">
+            <h3>Customer Reviews</h3>
+            <div class="reviews-list">
+              <div class="review-item">
+                <div class="review-header">
+                  <span class="review-author">John Smith</span>
+                  <span class="review-rating">★★★★★</span>
+                </div>
+                <p class="review-text">Excellent quality wheels! They look amazing on my BMW and the ride quality is noticeably smoother. Highly recommended!</p>
+              </div>
+              <div class="review-item">
+                <div class="review-header">
+                  <span class="review-author">Sarah Johnson</span>
+                  <span class="review-rating">★★★★★</span>
+                </div>
+                <p class="review-text">Great product and fast shipping. Installation was easy and the wheels fit perfectly. Very satisfied with my purchase.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compatibility Checker -->
+    <section class="compatibility-checker-section">
+      <div class="compatibility-checker-container">
+        <h2 class="compatibility-checker-title">CHECK IF THIS FITS YOUR VEHICLE</h2>
+        <p class="compatibility-checker-subtitle">Enter your vehicle details to verify compatibility with this product</p>
+
+        <form class="compatibility-checker-form">
+          <div class="form-group">
+            <label for="vehicle-year">Year</label>
+            <select id="vehicle-year" class="form-control">
+              <option value="">Select Year</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="vehicle-make">Make</label>
+            <select id="vehicle-make" class="form-control">
+              <option value="">Select Make</option>
+              <option value="bmw">BMW</option>
+              <option value="audi">Audi</option>
+              <option value="mercedes">Mercedes-Benz</option>
+              <option value="volkswagen">Volkswagen</option>
+              <option value="toyota">Toyota</option>
+              <option value="honda">Honda</option>
+              <option value="ford">Ford</option>
+              <option value="chevrolet">Chevrolet</option>
+              <option value="tesla">Tesla</option>
+              <option value="porsche">Porsche</option>
+              <option value="jaguar">Jaguar</option>
+              <option value="lexus">Lexus</option>
+              <option value="mazda">Mazda</option>
+              <option value="nissan">Nissan</option>
+              <option value="subaru">Subaru</option>
+              <option value="hyundai">Hyundai</option>
+              <option value="kia">Kia</option>
+              <option value="volvo">Volvo</option>
+              <option value="jeep">Jeep</option>
+              <option value="ram">RAM</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="vehicle-model">Model</label>
+            <select id="vehicle-model" class="form-control">
+              <option value="">Select Model</option>
+              <option value="3-series">3 Series</option>
+              <option value="5-series">5 Series</option>
+              <option value="7-series">7 Series</option>
+              <option value="x1">X1</option>
+              <option value="x3">X3</option>
+              <option value="x5">X5</option>
+              <option value="x7">X7</option>
+              <option value="m3">M3</option>
+              <option value="m5">M5</option>
+              <option value="a3">A3</option>
+              <option value="a4">A4</option>
+              <option value="a6">A6</option>
+              <option value="q3">Q3</option>
+              <option value="q5">Q5</option>
+              <option value="q7">Q7</option>
+              <option value="c-class">C-Class</option>
+              <option value="e-class">E-Class</option>
+              <option value="s-class">S-Class</option>
+              <option value="glc">GLC</option>
+              <option value="gle">GLE</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="vehicle-engine">Engine Type</label>
+            <select id="vehicle-engine" class="form-control">
+              <option value="">Select Engine Type</option>
+              <option value="gasoline">Gasoline</option>
+              <option value="diesel">Diesel</option>
+              <option value="hybrid">Hybrid</option>
+              <option value="electric">Electric</option>
+              <option value="plug-in-hybrid">Plug-in Hybrid</option>
+            </select>
+          </div>
+
+          <button type="submit" class="compatibility-checker-btn">CHECK COMPATIBILITY</button>
+        </form>
+
+        <div class="compatibility-result" style="display: none;">
+          <div class="compatibility-result-content">
+            <span class="compatibility-result-icon">✓</span>
+            <h3>This product is compatible with your vehicle!</h3>
+            <p>This wheel will fit your vehicle perfectly. All specifications match your vehicle's requirements.</p>
+            <div class="compatibility-details">
+              <div class="compatibility-detail-item">
+                <span class="detail-label">Bolt Pattern:</span>
+                <span class="detail-value">5x120mm</span>
+              </div>
+              <div class="compatibility-detail-item">
+                <span class="detail-label">Center Bore:</span>
+                <span class="detail-value">72.6mm</span>
+              </div>
+              <div class="compatibility-detail-item">
+                <span class="detail-label">Offset:</span>
+                <span class="detail-value">+35mm</span>
+              </div>
+              <div class="compatibility-detail-item">
+                <span class="detail-label">Load Rating:</span>
+                <span class="detail-value">1200 lbs</span>
+              </div>
+            </div>
+            <button class="compatibility-add-to-cart-btn">ADD TO CART NOW</button>
+          </div>
+        </div>
+
+        <div class="compatibility-info">
+          <h3 class="compatibility-info-title">Why Check Compatibility?</h3>
+          <div class="compatibility-info-grid">
+            <div class="compatibility-info-item">
+              <div class="info-icon">🔧</div>
+              <h4>Perfect Fit</h4>
+              <p>Ensure the wheel fits your vehicle's specifications perfectly</p>
+            </div>
+            <div class="compatibility-info-item">
+              <div class="info-icon">⚙️</div>
+              <h4>Proper Alignment</h4>
+              <p>Correct offset and bolt pattern for optimal performance</p>
+            </div>
+            <div class="compatibility-info-item">
+              <div class="info-icon">🛡️</div>
+              <h4>Safety Assured</h4>
+              <p>Verified compatibility ensures safe driving experience</p>
+            </div>
+            <div class="compatibility-info-item">
+              <div class="info-icon">💰</div>
+              <h4>No Returns</h4>
+              <p>Avoid costly returns by checking compatibility first</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best For Section -->
+    <section class="best-for-section">
+      <div class="best-for-container">
+        <h2 class="best-for-title">BEST FOR</h2>
+        
+        <div class="best-for-grid">
+          <div class="best-for-item">
+            <div class="best-for-icon">🏎️</div>
+            <h3>Performance Driving</h3>
+            <p>Enhanced handling and responsiveness for spirited driving</p>
+          </div>
+
+          <div class="best-for-item">
+            <div class="best-for-icon">✨</div>
+            <h3>Aesthetic Upgrade</h3>
+            <p>Sleek matte black finish elevates your vehicle's appearance</p>
+          </div>
+
+          <div class="best-for-item">
+            <div class="best-for-icon">⚡</div>
+            <h3>Fuel Efficiency</h3>
+            <p>Lightweight design reduces unsprung weight for better MPG</p>
+          </div>
+
+          <div class="best-for-item">
+            <div class="best-for-icon">🛡️</div>
+            <h3>Durability</h3>
+            <p>Premium materials ensure long-lasting performance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="related-products-section">
+      <div class="related-products-container">
+        <h2 class="related-products-title">RELATED PRODUCTS</h2>
+        
+        <div class="related-products-grid">
+          <article class="card">
+            <div class="card__img">
+              <img src="/shop-single-new-7-600x713-removebg-preview.png" alt="Product">
+            </div>
+            <div class="card__name"><p>PREMIUM WHEEL</p></div>
+            <div class="card__precis">
+              <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+              <div>
+                <span class="card__preci card__preci--before">$990.00</span>
+                <span class="card__preci card__preci--now">$749.00</span>
+              </div>
+              <a href="product.html" class="card__btn">VIEW</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__img">
+              <img src="/shop-single-new-7-600x713-removebg-preview.png" alt="Product">
+            </div>
+            <div class="card__name"><p>PREMIUM WHEEL</p></div>
+            <div class="card__precis">
+              <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+              <div>
+                <span class="card__preci card__preci--before">$990.00</span>
+                <span class="card__preci card__preci--now">$749.00</span>
+              </div>
+              <a href="product.html" class="card__btn">VIEW</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__img">
+              <img src="/shop-single-new-7-600x713-removebg-preview.png" alt="Product">
+            </div>
+            <div class="card__name"><p>PREMIUM WHEEL</p></div>
+            <div class="card__precis">
+              <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+              <div>
+                <span class="card__preci card__preci--before">$990.00</span>
+                <span class="card__preci card__preci--now">$749.00</span>
+              </div>
+              <a href="product.html" class="card__btn">VIEW</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__img">
+              <img src="/shop-single-new-7-600x713-removebg-preview.png" alt="Product">
+            </div>
+            <div class="card__name"><p>PREMIUM WHEEL</p></div>
+            <div class="card__precis">
+              <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+              <div>
+                <span class="card__preci card__preci--before">$990.00</span>
+                <span class="card__preci card__preci--now">$749.00</span>
+              </div>
+              <a href="product.html" class="card__btn">VIEW</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="cta-container">
+        <div class="cta-content">
+          <div>
+            <h2 class="cta-heading">READY TO UPGRADE YOUR RIDE?</h2>
+            <p class="cta-description">Discover our premium automotive components and take your vehicle to the next level.</p>
+          </div>
+        </div>
+        <button class="cta-button" onclick="window.location.href='shop.html'">
+          <svg class="cta-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer Separator -->
+    <div class="footer-separator"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Column -->
+        <div class="footer-left">
+          <h3 class="footer-brand">SHIFT UP</h3>
+          <p class="footer-description">Premium automotive components and accessories for car enthusiasts.</p>
+          
+          <div class="footer-support">
+            <span class="footer-support-label">Support 24/7</span>
+            <span class="footer-phone">+1 (555) 123-4567</span>
+          </div>
+
+          <div class="footer-address">
+            <span class="footer-address-label">Address</span>
+            <span class="footer-address-text">123 Auto Street, Car City, CC 12345</span>
+          </div>
+        </div>
+
+        <!-- Right Columns -->
+        <div class="footer-right">
+          <div class="footer-column">
+            <h4 class="footer-column-title">SHOP</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">All Products</a></li>
+              <li><a href="#" class="footer-link">New Arrivals</a></li>
+              <li><a href="#" class="footer-link">Best Sellers</a></li>
+              <li><a href="#" class="footer-link">On Sale</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-column-title">COMPANY</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">About Us</a></li>
+              <li><a href="#" class="footer-link">Contact</a></li>
+              <li><a href="#" class="footer-link">Blog</a></li>
+              <li><a href="#" class="footer-link">Careers</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-column-title">SUPPORT</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">FAQ</a></li>
+              <li><a href="#" class="footer-link">Shipping Info</a></li>
+              <li><a href="#" class="footer-link">Returns</a></li>
+              <li><a href="#" class="footer-link">Warranty</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-column-title">LEGAL</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+              <li><a href="#" class="footer-link">Cookie Policy</a></li>
+              <li><a href="#" class="footer-link">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>

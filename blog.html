@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Shift Up</title>
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+      <div class="custom-cursor-box">
+        <div class="custom-cursor-dot"></div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header-alt">
+      <div class="header-logo">
+        <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+          <image href="/97fa7f9d-dd2c-4661-b432-887fc495fb3f.svg" width="120" height="40"/>
+        </svg>
+      </div>
+
+      <div class="header-search">
+        <input type="text" placeholder="Type your search here...">
+        <div class="header-search-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="M21 21l-4.35-4.35"/>
+          </svg>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <a href="index.html" class="header-nav-item">HOMES</a>
+        <a href="shop.html" class="header-nav-item">SHOP</a>
+        <a href="who-we-are.html" class="header-nav-item">WHO WE ARE</a>
+        <a href="faq.html" class="header-nav-item">FAQ</a>
+        <a href="services.html" class="header-nav-item">SERVICES</a>
+      </nav>
+
+      <div class="header-support-info">
+        <div>
+          <p class="header-support-label">Support center 24/7</p>
+          <p class="header-support-phone">+ 3 759 315 - 6427</p>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <div class="header-cart">
+          CART
+          <span class="header-cart-counter">0</span>
+        </div>
+
+        <div class="header-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu (only visible on mobile) -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+      <button class="mobile-menu-close">×</button>
+      <div class="mobile-menu-search">
+        <input type="text" placeholder="Search products..." class="mobile-menu-search-input">
+        <button class="mobile-menu-search-btn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="M21 21l-4.35-4.35"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="index.html" class="mobile-menu-item">HOME</a>
+        <a href="shop.html" class="mobile-menu-item">SHOP</a>
+        <a href="who-we-are.html" class="mobile-menu-item">WHO WE ARE</a>
+        <a href="faq.html" class="mobile-menu-item">FAQ</a>
+        <a href="services.html" class="mobile-menu-item">SERVICES</a>
+        <a href="contact.html" class="mobile-menu-item">CONTACT</a>
+      </nav>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar-menu">
+      <button class="sidebar-close">×</button>
+      
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">CONTACT INFO</h3>
+        <div class="sidebar-section-content">
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Phone</span>
+            <span class="sidebar-item-value">+1 (555) 123-4567</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Email</span>
+            <span class="sidebar-item-value">support@shiftup.com</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Support Hours</span>
+            <span class="sidebar-item-value">24/7 Available</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">ADDRESS</h3>
+        <div class="sidebar-section-content">
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Main Office</span>
+            <span class="sidebar-item-value">123 Auto Street<br>Car City, CC 12345<br>United States</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Service Center</span>
+            <span class="sidebar-item-value">456 Repair Avenue<br>Motor Town, MT 67890<br>United States</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">BUSINESS HOURS</h3>
+        <div class="sidebar-section-content">
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Monday - Friday</span>
+            <span class="sidebar-item-value">8:00 AM - 6:00 PM</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Saturday</span>
+            <span class="sidebar-item-value">9:00 AM - 4:00 PM</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Sunday</span>
+            <span class="sidebar-item-value">Closed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">NAVIGATION</h3>
+        <nav class="sidebar-nav">
+          <a href="index.html" class="sidebar-nav-item">HOME</a>
+          <a href="shop.html" class="sidebar-nav-item">SHOP</a>
+          <a href="who-we-are.html" class="sidebar-nav-item">WHO WE ARE</a>
+          <a href="faq.html" class="sidebar-nav-item">FAQ</a>
+          <a href="services.html" class="sidebar-nav-item">SERVICES</a>
+          <a href="contact.html" class="sidebar-nav-item">CONTACT</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+      <div class="blog-hero-content">
+        <h1 class="blog-hero-title">OUR BLOG</h1>
+        <p class="blog-hero-subtitle">Stay updated with the latest automotive tips and insights</p>
+      </div>
+      <img src="/h1-img3.jpg.jpeg" alt="Blog Hero" class="blog-hero-image">
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="blog-posts-section">
+      <div class="blog-posts-container">
+        <div class="blog-post-card">
+          <div class="blog-post-card-image">
+            <img src="/h1-img3.jpg.jpeg" alt="Eyes On The Road">
+          </div>
+          <div class="blog-post-card-content">
+            <div class="blog-post-card-date">
+              <span class="blog-post-card-month">OCT</span>
+              <span class="blog-post-card-day">05</span>
+            </div>
+            <div class="blog-post-card-meta">
+              <span class="blog-post-card-category">CAR</span>
+              <span class="blog-post-card-separator">|</span>
+              <span class="blog-post-card-tag">ELECTRONIC</span>
+            </div>
+            <h3 class="blog-post-card-title">Eyes On The Road</h3>
+            <p class="blog-post-card-excerpt">Learn the importance of keeping your eyes on the road and maintaining proper vehicle awareness while driving. Safety is our top priority.</p>
+            <a href="blog-detail.html?id=1" class="blog-post-card-link">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-post-card">
+          <div class="blog-post-card-image">
+            <img src="/h1-img3.jpg.jpeg" alt="Fast & Furious">
+          </div>
+          <div class="blog-post-card-content">
+            <div class="blog-post-card-date">
+              <span class="blog-post-card-month">OCT</span>
+              <span class="blog-post-card-day">25</span>
+            </div>
+            <div class="blog-post-card-meta">
+              <span class="blog-post-card-category">CAR</span>
+              <span class="blog-post-card-separator">|</span>
+              <span class="blog-post-card-tag">ELECTRONIC</span>
+            </div>
+            <h3 class="blog-post-card-title">Fast & Furious</h3>
+            <p class="blog-post-card-excerpt">Discover the latest high-performance vehicles and what makes them special. From acceleration to handling, we break down the specs.</p>
+            <a href="blog-detail.html?id=2" class="blog-post-card-link">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-post-card">
+          <div class="blog-post-card-image">
+            <img src="/h1-img3.jpg.jpeg" alt="Modern Car Industry">
+          </div>
+          <div class="blog-post-card-content">
+            <div class="blog-post-card-date">
+              <span class="blog-post-card-month">OCT</span>
+              <span class="blog-post-card-day">30</span>
+            </div>
+            <div class="blog-post-card-meta">
+              <span class="blog-post-card-category">CAR</span>
+              <span class="blog-post-card-separator">|</span>
+              <span class="blog-post-card-tag">ELECTRONIC</span>
+            </div>
+            <h3 class="blog-post-card-title">Modern Car Industry</h3>
+            <p class="blog-post-card-excerpt">Explore the evolution of the automotive industry and how technology is shaping the future of transportation and vehicle design.</p>
+            <a href="blog-detail.html?id=3" class="blog-post-card-link">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-post-card">
+          <div class="blog-post-card-image">
+            <img src="/h1-img3.jpg.jpeg" alt="Automobile Catalog">
+          </div>
+          <div class="blog-post-card-content">
+            <div class="blog-post-card-date">
+              <span class="blog-post-card-month">NOV</span>
+              <span class="blog-post-card-day">01</span>
+            </div>
+            <div class="blog-post-card-meta">
+              <span class="blog-post-card-category">CAR</span>
+              <span class="blog-post-card-separator">|</span>
+              <span class="blog-post-card-tag">ELECTRONIC</span>
+            </div>
+            <h3 class="blog-post-card-title">Automobile Catalog</h3>
+            <p class="blog-post-card-excerpt">Browse our comprehensive catalog of automotive components and accessories. Find everything you need for your vehicle maintenance.</p>
+            <a href="blog-detail.html?id=4" class="blog-post-card-link">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="cta-container">
+        <div class="cta-content">
+          <div>
+            <h2 class="cta-heading">READY TO UPGRADE YOUR RIDE?</h2>
+            <p class="cta-description">Discover our premium automotive components and take your vehicle to the next level.</p>
+          </div>
+        </div>
+        <button class="cta-button" onclick="window.location.href='shop.html'">
+          <svg class="cta-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer Separator -->
+    <div class="footer-separator"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Column -->
+        <div class="footer-left">
+          <h3 class="footer-brand">SHIFT UP</h3>
+          <p class="footer-description">Premium automotive components and accessories for car enthusiasts.</p>
+          
+          <div class="footer-support">
+            <span class="footer-support-label">Support 24/7</span>
+            <span class="footer-phone">+1 (555) 123-4567</span>
+          </div>
+
+          <div class="footer-address">
+            <span class="footer-address-label">Address</span>
+            <span class="footer-address-text">123 Auto Street, Car City, CC 12345</span>
+          </div>
+        </div>
+
+        <!-- Right Columns -->
+        <div class="footer-right">
+          <!-- Navigation Column -->
+          <div class="footer-column">
+            <h4 class="footer-column-title">NAVIGATION</h4>
+            <ul class="footer-links">
+              <li><a href="index.html" class="footer-link">HOME</a></li>
+              <li><a href="shop.html" class="footer-link">SHOP</a></li>
+              <li><a href="who-we-are.html" class="footer-link">WHO WE ARE</a></li>
+              <li><a href="services.html" class="footer-link">SERVICES</a></li>
+            </ul>
+          </div>
+
+          <!-- Services Column -->
+          <div class="footer-column">
+            <h4 class="footer-column-title">SERVICES</h4>
+            <ul class="footer-links">
+              <li><a href="faq.html" class="footer-link">FAQ</a></li>
+              <li><a href="services.html" class="footer-link">MAINTENANCE</a></li>
+              <li><a href="services.html" class="footer-link">REPAIRS</a></li>
+              <li><a href="services.html" class="footer-link">DIAGNOSTICS</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Column -->
+          <div class="footer-column">
+            <h4 class="footer-column-title">CONTACT</h4>
+            <ul class="footer-links">
+              <li><a href="contact.html" class="footer-link">CONTACT US</a></li>
+              <li><a href="shop.html" class="footer-link">SHOP</a></li>
+              <li><a href="index.html" class="footer-link">SUPPORT</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal Column -->
+          <div class="footer-column">
+            <h4 class="footer-column-title">LEGAL</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">PRIVACY POLICY</a></li>
+              <li><a href="#" class="footer-link">TERMS OF SERVICE</a></li>
+              <li><a href="#" class="footer-link">COOKIE POLICY</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

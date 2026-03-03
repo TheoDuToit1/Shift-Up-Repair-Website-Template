@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who We Are - Shift Up</title>
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="stylesheet" href="/src/styles/who-we-are.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+      <div class="custom-cursor-box">
+        <div class="custom-cursor-dot"></div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header-alt">
+      <div class="header-logo">
+        <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+          <image href="/97fa7f9d-dd2c-4661-b432-887fc495fb3f.svg" width="120" height="40"/>
+        </svg>
+      </div>
+
+      <div class="header-search">
+        <input type="text" placeholder="Type your search here...">
+        <div class="header-search-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="M21 21l-4.35-4.35"/>
+          </svg>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <a href="index.html" class="header-nav-item">HOMES</a>
+        <a href="shop.html" class="header-nav-item">SHOP</a>
+        <a href="who-we-are.html" class="header-nav-item active">WHO WE ARE</a>
+        <a href="faq.html" class="header-nav-item">FAQ</a>
+        <a href="services.html" class="header-nav-item">SERVICES</a>
+      </nav>
+
+      <div class="header-support-info">
+        <div>
+          <p class="header-support-label">Support center 24/7</p>
+          <p class="header-support-phone">+ 3 759 315 - 6427</p>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <div class="header-cart">
+          CART
+          <span class="header-cart-counter">0</span>
+        </div>
+
+        <div class="header-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu (only visible on mobile) -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+      <button class="mobile-menu-close">×</button>
+      <div class="mobile-menu-search">
+        <input type="text" placeholder="Search products..." class="mobile-menu-search-input">
+        <button class="mobile-menu-search-btn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="M21 21l-4.35-4.35"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="index.html" class="mobile-menu-item">HOME</a>
+        <a href="shop.html" class="mobile-menu-item">SHOP</a>
+        <a href="who-we-are.html" class="mobile-menu-item">WHO WE ARE</a>
+        <a href="faq.html" class="mobile-menu-item">FAQ</a>
+        <a href="services.html" class="mobile-menu-item">SERVICES</a>
+        <a href="contact.html" class="mobile-menu-item">CONTACT</a>
+      </nav>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar-menu">
+      <button class="sidebar-close">×</button>
+      
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">CONTACT INFO</h3>
+        <div class="sidebar-section-content">
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Phone</span>
+            <span class="sidebar-item-value">+1 (555) 123-4567</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Email</span>
+            <span class="sidebar-item-value">support@shiftup.com</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Support Hours</span>
+            <span class="sidebar-item-value">24/7 Available</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">ADDRESS</h3>
+        <div class="sidebar-section-content">
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Main Office</span>
+            <span class="sidebar-item-value">123 Auto Street<br>Car City, CC 12345<br>United States</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Service Center</span>
+            <span class="sidebar-item-value">456 Repair Avenue<br>Motor Town, MT 67890<br>United States</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">BUSINESS HOURS</h3>
+        <div class="sidebar-section-content">
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Monday - Friday</span>
+            <span class="sidebar-item-value">8:00 AM - 6:00 PM</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Saturday</span>
+            <span class="sidebar-item-value">9:00 AM - 4:00 PM</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Sunday</span>
+            <span class="sidebar-item-value">Closed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">NAVIGATION</h3>
+        <nav class="sidebar-nav">
+          <a href="index.html" class="sidebar-nav-item">HOME</a>
+          <a href="shop.html" class="sidebar-nav-item">SHOP</a>
+          <a href="who-we-are.html" class="sidebar-nav-item">WHO WE ARE</a>
+          <a href="faq.html" class="sidebar-nav-item">FAQ</a>
+          <a href="services.html" class="sidebar-nav-item">SERVICES</a>
+          <a href="contact.html" class="sidebar-nav-item">CONTACT</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+      <div class="about-hero-content">
+        <h1 class="about-hero-title">WHO WE ARE</h1>
+        <p class="about-hero-subtitle">Leading the automotive industry with passion and expertise</p>
+      </div>
+      <img src="/h1-rev-img3.jpg" alt="Who We Are" class="about-hero-image">
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision">
+      <div class="mission-vision-container">
+        <!-- Left Sidebar - Core Values Title -->
+        <div class="mission-vision-sidebar-vertical">
+          <h2 class="mission-vision-vertical-title">OUR VALUES</h2>
+        </div>
+
+        <div class="mission-vision-content">
+          <div class="mission-vision-header">
+            <p class="mission-vision-subtitle">Everything you need to know about Shift Up</p>
+          </div>
+          
+          <div class="options">
+          <div class="option" style="--optionBackground:url(/main img.png);" data-closed-bg="url(/headlight shot.png)" data-open-bg="url(/main img.png)" data-label="OUR MISSION">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="info">
+                <div class="main">OUR MISSION</div>
+                <div class="sub">To provide exceptional automotive repair and maintenance services with integrity, innovation, and a commitment to customer satisfaction.</div>
+              </div>
+            </div>
+          </div>
+          <div class="option" style="--optionBackground:url(/headlight shot.png);" data-closed-bg="url(/headlight shot.png)" data-open-bg="url(/main img.png)" data-label="OUR VISION">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="info">
+                <div class="main">OUR VISION</div>
+                <div class="sub">To become the leading automotive service provider, recognized for excellence, reliability, and customer-centric solutions.</div>
+              </div>
+            </div>
+          </div>
+          <div class="option" style="--optionBackground:url(/headlight shot.png);" data-closed-bg="url(/headlight shot.png)" data-open-bg="url(/main img.png)" data-label="OUR VALUES">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="info">
+                <div class="main">OUR VALUES</div>
+                <div class="sub">Integrity, excellence, innovation, and customer satisfaction drive every decision we make and every service we provide.</div>
+              </div>
+            </div>
+          </div>
+          <div class="option" style="--optionBackground:url(/headlight shot.png);" data-closed-bg="url(/headlight shot.png)" data-open-bg="url(/main img.png)" data-label="QUALITY">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="info">
+                <div class="main">QUALITY</div>
+                <div class="sub">We maintain the highest standards in every repair, using only genuine parts and advanced diagnostic equipment.</div>
+              </div>
+            </div>
+          </div>
+          <div class="option" style="--optionBackground:url(/headlight shot.png);" data-closed-bg="url(/headlight shot.png)" data-open-bg="url(/main img.png)" data-label="EXPERTISE">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="info">
+                <div class="main">EXPERTISE</div>
+                <div class="sub">Our certified technicians bring years of experience and continuous training to handle all vehicle types and repair needs.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Story Section -->
+    <section class="company-story">
+      <div class="company-story-container">
+        <div class="company-story-left">
+          <img src="/h1-img3.jpg.jpeg" alt="Company Story" class="company-story-image">
+        </div>
+        <div class="company-story-right">
+          <h2 class="company-story-title">OUR STORY</h2>
+          <p class="company-story-text">Founded in 2015, Shift Up began with a simple vision: to revolutionize the automotive repair industry. What started as a small garage with a handful of passionate technicians has grown into a state-of-the-art facility serving thousands of customers.</p>
+          <p class="company-story-text">Our journey has been defined by our commitment to excellence, continuous innovation, and an unwavering dedication to customer satisfaction. We've invested in the latest diagnostic equipment, trained our team with industry-leading certifications, and built a reputation for reliability and quality.</p>
+          <p class="company-story-text">Today, Shift Up stands as a beacon of trust in the automotive community, serving not just as a repair shop, but as a partner in keeping your vehicle running smoothly for years to come.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements">
+      <div class="achievements-container">
+        <h2 class="achievements-title">OUR ACHIEVEMENTS</h2>
+        
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-number">2015</div>
+            <p>Company Founded</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-number">50K+</div>
+            <p>Repairs Completed</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-number">98%</div>
+            <p>Customer Satisfaction</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-number">28</div>
+            <p>Industry Awards</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-number">500+</div>
+            <p>Expert Technicians</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-number">12</div>
+            <p>Service Locations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us-about">
+      <div class="why-choose-us-about-container">
+        <h2 class="why-choose-us-about-title">WHY CHOOSE SHIFT UP</h2>
+        
+        <div class="why-choose-us-about-grid">
+          <div class="why-choose-us-about-card">
+            <div class="why-choose-us-about-icon-box">
+              <img src="/Quality Assurance.png" alt="Quality Assurance" class="why-choose-us-about-icon-img">
+            </div>
+            <h3>Quality Assurance</h3>
+            <p>Every repair is backed by our 12-month warranty and rigorous quality checks</p>
+          </div>
+
+          <div class="why-choose-us-about-card">
+            <div class="why-choose-us-about-icon-box">
+              <img src="/Expert Team.png" alt="Expert Team" class="why-choose-us-about-icon-img">
+            </div>
+            <h3>Expert Team</h3>
+            <p>Certified technicians with years of experience in all vehicle types</p>
+          </div>
+
+          <div class="why-choose-us-about-card">
+            <div class="why-choose-us-about-icon-box">
+              <img src="/Transparent Pricing.png" alt="Transparent Pricing" class="why-choose-us-about-icon-img">
+            </div>
+            <h3>Transparent Pricing</h3>
+            <p>No hidden fees, competitive rates, and flexible payment options</p>
+          </div>
+
+          <div class="why-choose-us-about-card">
+            <div class="why-choose-us-about-icon-box">
+              <img src="/Fast Service.png" alt="Fast Service" class="why-choose-us-about-icon-img">
+            </div>
+            <h3>Fast Service</h3>
+            <p>Quick turnaround times without compromising on quality</p>
+          </div>
+
+          <div class="why-choose-us-about-card">
+            <div class="why-choose-us-about-icon-box">
+              <img src="/Genuine Parts.png" alt="Genuine Parts" class="why-choose-us-about-icon-img">
+            </div>
+            <h3>Genuine Parts</h3>
+            <p>Only OEM parts used for all repairs and replacements</p>
+          </div>
+
+          <div class="why-choose-us-about-card">
+            <div class="why-choose-us-about-icon-box">
+              <img src="/247 Support.png" alt="24/7 Support" class="why-choose-us-about-icon-img">
+            </div>
+            <h3>24/7 Support</h3>
+            <p>Round-the-clock customer support and roadside assistance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="cta-container">
+        <div class="cta-content">
+          <div>
+            <h2 class="cta-heading">READY TO EXPERIENCE THE SHIFT UP DIFFERENCE?</h2>
+            <p class="cta-description">Join thousands of satisfied customers who trust us with their vehicles.</p>
+          </div>
+        </div>
+        <button class="cta-button" onclick="window.location.href='shop.html'">
+          <svg class="cta-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer Separator -->
+    <div class="footer-separator"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Column -->
+        <div class="footer-left">
+          <h3 class="footer-brand">SHIFT UP</h3>
+          <p class="footer-description">Premium automotive components and accessories for car enthusiasts.</p>
+          
+          <div class="footer-support">
+            <span class="footer-support-label">Support 24/7</span>
+            <span class="footer-phone">+1 (555) 123-4567</span>
+          </div>
+
+          <div class="footer-address">
+            <span class="footer-address-label">Address</span>
+            <span class="footer-address-text">123 Auto Street, Car City, CC 12345</span>
+          </div>
+        </div>
+
+        <!-- Right Columns -->
+        <div class="footer-right">
+          <div class="footer-column">
+            <h4 class="footer-column-title">SHOP</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">All Products</a></li>
+              <li><a href="#" class="footer-link">New Arrivals</a></li>
+              <li><a href="#" class="footer-link">Best Sellers</a></li>
+              <li><a href="#" class="footer-link">On Sale</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-column-title">COMPANY</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">About Us</a></li>
+              <li><a href="#" class="footer-link">Contact</a></li>
+              <li><a href="#" class="footer-link">Blog</a></li>
+              <li><a href="#" class="footer-link">Careers</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-column-title">SUPPORT</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">FAQ</a></li>
+              <li><a href="#" class="footer-link">Shipping Info</a></li>
+              <li><a href="#" class="footer-link">Returns</a></li>
+              <li><a href="#" class="footer-link">Warranty</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-column-title">LEGAL</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+              <li><a href="#" class="footer-link">Cookie Policy</a></li>
+              <li><a href="#" class="footer-link">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>

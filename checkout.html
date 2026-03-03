@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Shift Up</title>
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="stylesheet" href="/src/styles/checkout.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+      <div class="custom-cursor-box">
+        <div class="custom-cursor-dot"></div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header-alt">
+      <div class="header-logo">
+        <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+          <image href="/97fa7f9d-dd2c-4661-b432-887fc495fb3f.svg" width="120" height="40"/>
+        </svg>
+      </div>
+
+      <div class="header-search">
+        <input type="text" placeholder="Type your search here...">
+        <div class="header-search-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="M21 21l-4.35-4.35"/>
+          </svg>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <a href="index.html" class="header-nav-item">HOMES</a>
+        <a href="shop.html" class="header-nav-item">SHOP</a>
+        <a href="who-we-are.html" class="header-nav-item">WHO WE ARE</a>
+        <a href="faq.html" class="header-nav-item">FAQ</a>
+        <a href="services.html" class="header-nav-item">SERVICES</a>
+      </nav>
+
+      <div class="header-support-info">
+        <div>
+          <p class="header-support-label">Support center 24/7</p>
+          <p class="header-support-phone">+ 3 759 315 - 6427</p>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <div class="header-cart">
+          CART
+          <span class="header-cart-counter">0</span>
+        </div>
+
+        <div class="header-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu (only visible on mobile) -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+      <button class="mobile-menu-close">×</button>
+      <div class="mobile-menu-search">
+        <input type="text" placeholder="Search products..." class="mobile-menu-search-input">
+        <button class="mobile-menu-search-btn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="M21 21l-4.35-4.35"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="index.html" class="mobile-menu-item">HOME</a>
+        <a href="shop.html" class="mobile-menu-item">SHOP</a>
+        <a href="who-we-are.html" class="mobile-menu-item">WHO WE ARE</a>
+        <a href="faq.html" class="mobile-menu-item">FAQ</a>
+        <a href="services.html" class="mobile-menu-item">SERVICES</a>
+        <a href="contact.html" class="mobile-menu-item">CONTACT</a>
+      </nav>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar-menu">
+      <button class="sidebar-close">×</button>
+      
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">CONTACT INFO</h3>
+        <div class="sidebar-section-content">
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Phone</span>
+            <span class="sidebar-item-value">+1 (555) 123-4567</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Email</span>
+            <span class="sidebar-item-value">support@shiftup.com</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Support Hours</span>
+            <span class="sidebar-item-value">24/7 Available</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">ADDRESS</h3>
+        <div class="sidebar-section-content">
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Main Office</span>
+            <span class="sidebar-item-value">123 Auto Street<br>Car City, CC 12345<br>United States</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Service Center</span>
+            <span class="sidebar-item-value">456 Repair Avenue<br>Motor Town, MT 67890<br>United States</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">BUSINESS HOURS</h3>
+        <div class="sidebar-section-content">
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Monday - Friday</span>
+            <span class="sidebar-item-value">8:00 AM - 6:00 PM</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Saturday</span>
+            <span class="sidebar-item-value">9:00 AM - 4:00 PM</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="sidebar-item-label">Sunday</span>
+            <span class="sidebar-item-value">Closed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">NAVIGATION</h3>
+        <nav class="sidebar-nav">
+          <a href="index.html" class="sidebar-nav-item">HOME</a>
+          <a href="shop.html" class="sidebar-nav-item">SHOP</a>
+          <a href="who-we-are.html" class="sidebar-nav-item">WHO WE ARE</a>
+          <a href="faq.html" class="sidebar-nav-item">FAQ</a>
+          <a href="services.html" class="sidebar-nav-item">SERVICES</a>
+          <a href="contact.html" class="sidebar-nav-item">CONTACT</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+      <div class="checkout-container">
+        <h1 class="checkout-title">CHECKOUT</h1>
+
+        <div class="checkout-content">
+          <!-- Left Column - Cart Items -->
+          <div class="checkout-left">
+            <h2 class="checkout-subtitle">ORDER SUMMARY</h2>
+            
+            <div class="checkout-items">
+              <!-- Items will be populated by JavaScript -->
+            </div>
+
+            <div class="checkout-summary">
+              <div class="summary-row">
+                <span>Subtotal:</span>
+                <span class="subtotal">$0.00</span>
+              </div>
+              <div class="summary-row">
+                <span>Shipping:</span>
+                <span class="shipping">$0.00</span>
+              </div>
+              <div class="summary-row">
+                <span>Tax:</span>
+                <span class="tax">$0.00</span>
+              </div>
+              <div class="summary-row total">
+                <span>Total:</span>
+                <span class="total-amount">$0.00</span>
+              </div>
+            </div>
+
+            <a href="shop.html" class="continue-shopping-btn">CONTINUE SHOPPING</a>
+          </div>
+
+          <!-- Right Column - Checkout Form -->
+          <div class="checkout-right">
+            <form class="checkout-form">
+              <!-- Billing Information -->
+              <div class="form-section">
+                <h3 class="form-section-title">BILLING INFORMATION</h3>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" class="form-control" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="address">Street Address</label>
+                  <input type="text" id="address" class="form-control" required>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="state">State</label>
+                    <input type="text" id="state" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="zip">ZIP Code</label>
+                    <input type="text" id="zip" class="form-control" required>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Shipping Information -->
+              <div class="form-section">
+                <h3 class="form-section-title">SHIPPING METHOD</h3>
+                
+                <div class="shipping-options">
+                  <label class="shipping-option">
+                    <input type="radio" name="shipping" value="standard" checked>
+                    <span class="option-label">Standard Shipping (5-7 business days) - FREE</span>
+                  </label>
+                  <label class="shipping-option">
+                    <input type="radio" name="shipping" value="express">
+                    <span class="option-label">Express Shipping (2-3 business days) - $15.00</span>
+                  </label>
+                  <label class="shipping-option">
+                    <input type="radio" name="shipping" value="overnight">
+                    <span class="option-label">Overnight Shipping (Next day) - $35.00</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Payment Information -->
+              <div class="form-section">
+                <h3 class="form-section-title">PAYMENT INFORMATION</h3>
+                
+                <div class="form-group">
+                  <label for="card-name">Cardholder Name</label>
+                  <input type="text" id="card-name" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="card-number">Card Number</label>
+                  <input type="text" id="card-number" class="form-control" placeholder="1234 5678 9012 3456" required>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="expiry">Expiry Date</label>
+                    <input type="text" id="expiry" class="form-control" placeholder="MM/YY" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" class="form-control" placeholder="123" required>
+                  </div>
+                </div>
+
+                <label class="checkbox-label">
+                  <input type="checkbox" id="terms" required>
+                  <span>I agree to the terms and conditions</span>
+                </label>
+              </div>
+
+              <button type="submit" class="checkout-btn">COMPLETE PURCHASE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Separator -->
+    <div class="footer-separator"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Column -->
+        <div class="footer-left">
+          <h3 class="footer-brand">SHIFT UP</h3>
+          <p class="footer-description">Premium automotive components and accessories for car enthusiasts.</p>
+          
+          <div class="footer-support">
+            <span class="footer-support-label">Support 24/7</span>
+            <span class="footer-phone">+1 (555) 123-4567</span>
+          </div>
+
+          <div class="footer-address">
+            <span class="footer-address-label">Address</span>
+            <span class="footer-address-text">123 Auto Street, Car City, CC 12345</span>
+          </div>
+        </div>
+
+        <!-- Right Columns -->
+        <div class="footer-right">
+          <div class="footer-column">
+            <h4 class="footer-column-title">SHOP</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">All Products</a></li>
+              <li><a href="#" class="footer-link">New Arrivals</a></li>
+              <li><a href="#" class="footer-link">Best Sellers</a></li>
+              <li><a href="#" class="footer-link">On Sale</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-column-title">COMPANY</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">About Us</a></li>
+              <li><a href="#" class="footer-link">Contact</a></li>
+              <li><a href="#" class="footer-link">Blog</a></li>
+              <li><a href="#" class="footer-link">Careers</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-column-title">SUPPORT</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">FAQ</a></li>
+              <li><a href="#" class="footer-link">Shipping Info</a></li>
+              <li><a href="#" class="footer-link">Returns</a></li>
+              <li><a href="#" class="footer-link">Warranty</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-column-title">LEGAL</h4>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+              <li><a href="#" class="footer-link">Terms of Service</a></li>
+              <li><a href="#" class="footer-link">Cookie Policy</a></li>
+              <li><a href="#" class="footer-link">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>
